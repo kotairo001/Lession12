@@ -8,12 +8,26 @@
 </head>
 <body>
     <script>
-        let a = prompt("Input your degree");
-        if (a>100) {
-            alert("Turn down your degree");
-        } else if (a<20) {
-            alert("Turn up your degree");
-        }
+        // let a = prompt("Input your degree");
+        // if (a>100) {
+        //     alert("Turn down your degree");
+        // } else if (a<20) {
+        //     alert("Turn up your degree");
+        // }
+        let a = prompt("Input your temper");
+        let i=1;
+        while (i++) {
+            if (a<20) {
+                alert("Increase your temper!");
+                let a = prompt("Input your temper again");
+            } else if (a>100) {
+                alert("Decrease your temper!");
+                let a = prompt("Input your temper again");
+            } else {
+                break;
+            }
+            
+        } 
     </script>
 </body>
 </html>
