@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="guess ()">Click me</button>
+    <script>
+        function guess () {
+        let a = parseInt(prompt("Input first numbers"));
+        let b = parseInt(prompt("Input last numbers"));
+        let c = "";
+        for (i=a; i<=b; i++) {
+            c= Math.floor(Math.random()*b)+a;
+        }
+        let d = parseInt(prompt("Input the number you choose!"));
+        // document.write(c);
+        if (c==d) {       
+            document.write("You guess right!");
+        } else {
+            document.write("Try agian!");
+        }
+    }
+    </script>
+</body>
+</html>
